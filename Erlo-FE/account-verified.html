@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erlo Academy</title>
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="topnav">
+
+        <!-- Centered link -->
+        <div class="topnav-centered">
+            <a class="logo" href="index.html"><img src='https://i.postimg.cc/nMR9VkH4/logo-1-removebg-preview.png' width="115%"/></a>
+        </div>
+      
+        <!-- Left-aligned links (default) -->
+        <div class="topnav-left">
+        <a href="#">About</a>
+        <a href="courses.html">Courses</a>
+        </div>
+        <!-- Right-aligned links -->
+        <div class="topnav-right">
+          <a href="register.html" id="register">Register</a>
+          <a href="login.html" id="login">Login</a>
+          <a hidden href="profile.html" id="profile"></a>
+          <a hidden href="#" id="logout" onclick="logout()">Logout</a>
+        </div>
+      
+      </div>
+
+    <div class="thumbnail">
+        <div class="redirect-text">
+            <h1>Your account has been verified. Click <a style="color: black;" href="login.html">here</a> to log in.</h1>
+        </div>
+    </div>
+</body>
+</html>

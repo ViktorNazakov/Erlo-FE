@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erlo Academy</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body onload="checkIfUserIsLogged()">
+    <div class="topnav">
+
+        <!-- Centered link -->
+        <div class="topnav-centered">
+            <a class="logo" href="index.html"><img src='https://i.postimg.cc/nMR9VkH4/logo-1-removebg-preview.png' width="115%"/></a>
+        </div>
+      
+        <!-- Left-aligned links (default) -->
+        <div class="topnav-left">
+        <a href="#">About</a>
+        <a href="courses.html">Courses</a>
+        </div>
+        <!-- Right-aligned links -->
+        <div class="topnav-right">
+          <a href="register.html" id="register">Register</a>
+          <a href="login.html" id="login">Login</a>
+          <a hidden href="profile.html" id="profile"></a>
+          <a hidden href="#" id="logout" onclick="logout()">Logout</a>
+        </div>
+      
+      </div>
+      <div class="thumbnail"></div>
+      <div class="formspace-shadow1"></div>
+      <div class="formspace-shadow2"></div>
+      <div class="formspace">
+        <form>
+            <p hidden id="course-error" style="color: rgb(155, 37, 53);">You are already enrolled for this course</p>
+            <h2>Choose course</h2>
+            <div class="align">
+            <label for="courses">Course</label>
+            <select class="info" name="courses" id="courses">
+              <option hidden disabled selected value>select course</option>
+              <option value="COURSE_MATH">Math</option>
+              <option value="COURSE_HISTORY">History</option>
+              <option value="COURSE_CHEMISTRY">Chemistry</option>
+              <option value="COURSE_BIOLOGY">Biology</option>
+            </select>
+            </div>
+            <div class="submit-button">
+            <input class="button" type="button" value="Enroll" onclick="enrollForCourse()">
+            </div>
+        </form>
+      </div>
+</body>
+</html>

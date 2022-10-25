@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erlo Academy</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+<body onload="checkIfUserIsLogged()">
+    <div class="topnav">
+
+        <!-- Centered link -->
+        <div class="topnav-centered">
+            <a class="logo" href="index.html"><img src='https://i.postimg.cc/nMR9VkH4/logo-1-removebg-preview.png'
+                    width="115%" /></a>
+        </div>
+
+        <!-- Left-aligned links (default) -->
+        <div class="topnav-left">
+            <a href="#">About</a>
+            <a href="courses.html">Courses</a>
+        </div>
+        <!-- Right-aligned links -->
+        <div class="topnav-right">
+            <a href="register.html" id="register">Register</a>
+            <a href="login.html" id="login">Login</a>
+            <a hidden href="profile.html" id="profile"></a>
+            <a hidden href="#" id="logout" onclick="logout()">Logout</a>
+        </div>
+
+    </div>
+    <div class="thumbnail"></div>
+    <div class="courses-title">
+        <h1>
+        Our Courses
+        </h1>
+    </div>
+    <div class="courses">
+        <div class="course">
+            <h2>Math</h2>
+            <p>We have two of the best Math professors in the country!</p>
+            <div class="enroll-button">
+                <a href="#" onclick="checkForAuth()">Enroll now</a>
+            </div>
+        </div>
+        <div class="course">
+            <h2>Arts</h2>
+            <p>We have two of the best Arts professors in the country!</p>
+            <div class="enroll-button">
+                <a href="#" onclick="checkForAuth()">Enroll now</a>
+            </div>
+        </div>
+        <div class="course">
+            <h2>Chemistry</h2>
+            <p>We have two of the best Chemistry professors in the country!</p>
+            <div class="enroll-button">
+                <a href="#" onclick="checkForAuth()">Enroll now</a>
+            </div>
+        </div>
+        <div class="course">
+            <h2>Biology</h2>
+            <p>We have two of the best Biology professors in the country!</p>
+            <div class="enroll-button">
+                <a href="#" onclick="checkForAuth()">Enroll now</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

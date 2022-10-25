@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="register-login.css">
+    <script src="main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erlo Academy</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+    <div class="topnav">
+
+        <!-- Centered link -->
+        <div class="topnav-centered">
+            <a class="logo" href="index.html"><img src='https://i.postimg.cc/nMR9VkH4/logo-1-removebg-preview.png' width="115%"/></a>
+        </div>
+      
+        <!-- Left-aligned links (default) -->
+        <div class="topnav-left">
+        <a href="#">About</a>
+        <a href="courses.html">Courses</a>
+        </div>
+        <!-- Right-aligned links -->
+        <div class="topnav-right">
+          <a href="register.html">Register</a>
+          <a href="login.html">Login</a>
+        </div>
+      
+      </div>
+      <div class="thumbnail"></div>
+      <div class="formspace-shadow1"></div>
+      <div class="formspace-shadow2"></div>
+      <div class="formspace">
+        <form>
+            <p style="color: rgb(155, 37, 53);" hidden id="info-error">Invalid info or account not verified</p>
+            <h2  style="margin-top: 70px;">Login</h2>
+            <div class="align">
+            <label>Email</label>
+            <input class="info" type="email" id="email" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+            </div>
+            <div class="align">
+            <label>Password</label>
+            <input class="info" type="password" id="password" required pattern="\S+">
+            </div>
+            <div class="submit-button">
+              <input class="button" type="button" value="Login" onclick="sendLoginRequest()">
+              </div>
+        </form>
+      </div>
+</body>
+</html>
